@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <span class="x">X</span>
+        <h1>Tic Tac Toe</h1>
+        <span class="o">O</span>
+    </nav>
+    <marquee behavior="alternate" direction="left" scrollamount="25">🎮 Welcome to Tic Tac Toe • Make Your Move • Good
+        Luck! 🎯</marquee>
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
+    <div class="turn-box">
+        <span class="turn-icon">✕</span>
+        <div>
+            <h3>Player X's Turn</h3>
+            <p>Make your move!</p>
+        </div>
+    </div>
+    <div class="scoreboard">
+
+        <div class="score x-score">
+            <span>X Wins</span>
+            <strong id="xScore">0</strong>
+        </div>
+
+        <div class="score draw-score">
+            <span>Draws</span>
+            <strong id="drawScore">0</strong>
+        </div>
+
+        <div class="score o-score">
+            <span>O Wins</span>
+            <strong id="oScore">0</strong>
+        </div>
+
+    </div>
+    <div class="side-symbol left-x">X</div>
+    <div class="side-symbol right-o">O</div>
+    <div class="container">
+
+
+        <div class="game-board">
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <div class="win-line"></div>
+        </div>
+        <button class="reset-btn">↻ Reset Game</button>
+    </div>
+    <audio id="backgroundMusic" src="music.mp3" loop></audio>
+    <audio id="moveSound" src="ting.mp3"></audio>
+    <audio id="winSound" src="gameover.mp3"></audio>
+    <div class="winner-popup">
+        <div class="winner-content">
+
+            <img src="excited.gif" class="winner-gif" alt="Congratulations">
+
+            <h2>🎉 Congratulations! 🎉</h2>
+
+            <p class="winner-message">Player X Wins!</p>
+
+            <button class="close-winner">OK</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
